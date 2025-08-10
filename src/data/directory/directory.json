@@ -157,5 +157,12 @@
     "image": "",
     "description": "Offers a variety of meditation techniques, including breathwork, sound baths, and guided journeys.",
     "link": "https://minteddirectory.com"
+  },
+  {
+    "id": "prompt1",
+    "title": "Your Prompt Title",
+    "image": "",
+    "description": "Brief description of your prompt or tool",
+    "link": "https://yourprompt.com"
   }
 ]
