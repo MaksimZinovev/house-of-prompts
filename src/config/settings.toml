@@ -24,14 +24,14 @@ placeholder = "Search among {0} lprompts of this directory"
 
 [[directoryData.tags]]
 key = "copilot"
-name = "Github-Copilot"
+name = "Github Copilot"
 color = "blue"
 emoji = "👨‍✈️"
 description = "Custom GitHub Copilot prompts."
 
 [[directoryData.tags]]
 key = "chat-mode"
-name = "Copilot-Chatmode"
+name = "Github Copilot Chat Mode"
 color = "blue"
 emoji = "💬"
 description = "Custom GitHub Copilot prompts."

@@ -1,10 +1,11 @@
 ---
 title: AskTechExpert@2. Custom GitHub Copilot chat mode
+description: Answer technical coding questions as a domain expert (Azure DevOps, Pipelines, Playwright, BDD, TypeScript, Allure, JUnit, Groovy, Node.js, npm/npx, PowerShell, linting/formatting, VS Code, VS Code API, VS Code extensions).
 tags:
   - copilot
   - chat-mode
 link: https://yourprompt.com
-image: "../images/calm.png"
+image: "../images/superman_200d_2642.svg"
 ---
 ## Description
 

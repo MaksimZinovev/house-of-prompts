@@ -1,9 +1,11 @@
 ---
-title: Mentor with concise guidance, examples, and safer defaults grounded in the project’s existing patternsdescription
+title: Mentor
+description: Mentor with concise guidance, examples, and safer defaults grounded in the project’s existing patterns.
 tags:
   - copilot
   - chat-mode
 link: https://yourprompt.com
+image: "../images/student_u1f9d1.svg"
 ---
 
 
