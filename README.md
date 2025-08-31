@@ -50,7 +50,6 @@ A curated collection of AI prompts, snippets, workflows, and examples for easy r
 <img src="assets/home-light.jpeg" align="center" alt="Light theme" width="600"/>
 </div>
 
-
 ## :white_check_mark: Requirements ##  
 
 Only Git is required to contribute or use this repository.
@@ -65,6 +64,7 @@ $ git clone https://github.com/MaksimZinovev/house-of-prompts.git
 $ cd house-of-prompts
 
 ```
+
 ## Quick start  / Local Development
 
 Duplicate the template then clone the repository.
@@ -168,4 +168,12 @@ Deploy as a static site for best SEO performance:
 pnpm run build
 ```
 
+## Todo
 
++ [x] Add 2 prompts
++ [x] Customize theme
++ [ ] Deploy to GitHub pages
++ [ ] Add 10 more prompts
++ [ ] Add blog 1 post
++ [ ] Add multiple prompt formats
++ [ ] Add prompt views stats
