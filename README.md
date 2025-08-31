@@ -50,6 +50,20 @@ A curated collection of AI prompts, snippets, workflows, and examples for easy r
 <img src="assets/home-light.jpeg" align="center" alt="Light theme" width="600"/>
 </div>
 
+<details>
+
+<summary>More screenshots</summary>
+
+<br>
+<div align="center" id="top">
+<img src="assets/prompt-header.jpeg" align="center" alt="Prompt header" width="600"/>
+<br>
+<br>
+<img src="assets/prompt-code.jpeg" align="center" alt="Prompt body" width="600"/>
+</div>
+
+</details>
+
 ## :white_check_mark: Requirements ##  
 
 Only Git is required to contribute or use this repository.
@@ -114,6 +128,14 @@ Adding content to the directory can be done using one of the following formats:
 
 Remember that listings will not be shown on the live website until the site is re-built and deployed. This is done to ensure the fastest possible performance by serving static html, css and js.
 
+### Alternative ways to add content
+
+<details>
+
+<summary> More details </summary>
+
+<br>
+
 ### Using markdown listings
 
 1. add markdown files to the `src/data/directory` folder. All markdown files will be automatically loaded as listings.
@@ -137,6 +159,8 @@ Remember that listings will not be shown on the live website until the site is r
 4. Go to `settings.toml`, here you need to set the `source=sheets` and `key =` the copied id of the file
 
 Use this spreadsheet as a starting point: [directory google sheet data](https://docs.google.com/spreadsheets/d/1BKVVFysQT8ZuPY8hUp--jwTrN-U20TrtML0idECIWmc/edit?usp=sharing)
+
+</div>
 
 ## Customization
 
@@ -177,3 +201,7 @@ pnpm run build
 + [ ] Add blog 1 post
 + [ ] Add multiple prompt formats
 + [ ] Add prompt views stats
+
+## Credits
+
++ [masterkra/minted-directory-astro](https://github.com/masterkram/minted-directory-astro)
