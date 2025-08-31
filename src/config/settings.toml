@@ -31,7 +31,7 @@ description = "Custom GitHub Copilot prompts."
 
 [[directoryData.tags]]
 key = "chat-mode"
-name = "Github Copilot Chat Mode"
+name = "Chat Mode"
 color = "blue"
 emoji = "💬"
 description = "Custom GitHub Copilot prompts."
