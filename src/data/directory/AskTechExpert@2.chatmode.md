@@ -4,6 +4,7 @@ tags:
   - copilot
   - chat-mode
 link: https://yourprompt.com
+image: "../images/calm.png"
 ---
 ## Description
 
