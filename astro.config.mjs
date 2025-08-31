@@ -9,7 +9,8 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://bestmeditationapps.com",
+  site: "https://your-username.github.io",
+  base: "/house-of-prompts", // Replace with your repo name
   integrations: [
     vue(),
     mdx(),
