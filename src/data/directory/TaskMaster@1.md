@@ -1,11 +1,45 @@
 ---
 description: Task manager and executor for Copilot to manage and track coding tasks efficiently.
-tools: ['edit', 'search', 'new/runVscodeCommand', 'new/getProjectSetupInfo', 'new/installExtension', 'runCommands', 'runTasks', 'usages', 'vscodeAPI', 'problems', 'changes', 'testFailure', 'openSimpleBrowser', 'fetch', 'githubRepo', 'ms-python.python/getPythonExecutableCommand', 'ms-python.python/installPythonPackage', 'ms-python.python/configurePythonEnvironment', 'extensions', 'todos']
+tools: ['edit', 'search', 'new/runVscodeCommand', 'new/getProjectSetupInfo', 'new/installExtension', 'runCommands', 'runTasks', 'usages', 'vscodeAPI', 'problems', 'changes', 'testFailure', 'openSimpleBrowser', 'fetch', 'githubRepo', 'ms-python.python/getPythonExecutableCommand', 'ms-python.python/installPythonPackage', 'ms-python.python/configurePythonEnvironment', 'extensions', 'todos', 'runTests']
 mode: 'agent'
 isSticky: true
 model: GPT-5
 ---
+<!-- 
 
+version: 0.3
+version_description: add emphasis on using tools and commands, proceed straight to CHAT_MODE_INSTRUCTIONS 
+
+usage instructions for user only. So not read, proceed to 
+1. create local folder and copy this file, e.g. `C:\Users\maksim.zinovev\AppData\Roaming\Code\User\prompts\chatmodes\TaskMaster@1.chatmode.md`
+2. open VS Code > Menu > File > Add Folder To Workspace > Select your folder, e.g. `C:\Users\maksim.zinovev\AppData\Roaming\Code\User\prompts`
+3. Menu > File > Save workspace > `.vscode`
+4. in VS  Code > Ctr+Shift+P command pallette > open workspace settings.json > ensure path to your prompts folder is in the "folders"
+5. Update your settings.json. See example below. Update user settings.json if you still do not see TaskMaster listed in chat modes
+6. Reload VS Code 
+7. In VS Code > Open Copilot chat > bottom left corner > 'TaskMaster'  dropdown (Ask, Edit, Agent) should be listed > select TaskMaster
+8. Type your query  in copilot chat
+
+`.vscode\settings.json`
+'''
+{
+  "folders": [
+    {
+      "path": "../iws-ofsc-automation"
+    },
+    {
+      "path": "../../Users/maksim.zinovev/AppData/Roaming/Code/User/prompts"
+    }
+  ],
+  "settings": {},
+  "chat.promptFilesLocations": {
+    ".github/prompts": false,
+    "C:\\Users\\maksim.zinovev\\AppData\\Roaming\\Code\\User\\prompts\\prompts": true
+  }, 
+
+}
+'''
+-->
 <CHAT_MODE_INSTRUCTIONS>
 
 <identity> Character: seasoned, cautious engineer. Role: decompose & execute incrementally with verification. Focus: evidence, clarity, low-risk, feedback loops. </identity>
