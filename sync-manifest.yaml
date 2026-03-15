@@ -1,0 +1,93 @@
+# Sync Manifest for House of Prompts
+# Maps source files on your machine to target paths in this repo
+#
+# Usage:
+#   pnpm sync:pull    - Copy files from sources to repo
+#   pnpm sync:status  - Show what would be synced
+#
+# Add new entries under the appropriate category.
+# Use ~ for home directory expansion.
+
+settings:
+  # Strip secrets automatically (API keys, tokens, passwords)
+  strip_secrets: true
+
+  # Secret patterns to redact (regex patterns)
+  secret_patterns:
+    - 'sk-[a-zA-Z0-9]{20,}'           # OpenAI-style keys
+    - 'github_pat_[a-zA-Z0-9]{22,}'   # GitHub PATs
+    - 'ghp_[a-zA-Z0-9]{36}'           # GitHub tokens
+    - 'gho_[a-zA-Z0-9]{36}'           # GitHub OAuth
+    - 'ghu_[a-zA-Z0-9]{36}'           # GitHub user tokens
+    - 'ghs_[a-zA-Z0-9]{36}'           # GitHub server tokens
+    - 'ghr_[a-zA-Z0-9]{36}'           # GitHub refresh tokens
+    - 'xox[baprs]-[0-9]{10,}-[0-9]{10,}-[a-zA-Z0-9]{24}' # Slack tokens
+    - 'eyJ[a-zA-Z0-9_-]*\.eyJ[a-zA-Z0-9_-]*\.[a-zA-Z0-9_-]*' # JWTs
+    - '(?i)(api[_-]?key|token|secret|password|passwd|pwd)\s*[=:]\s*["\']?[a-zA-Z0-9_\-\.]{20,}["\']?'
+
+# ============================================================================
+# AGENTS - Custom agent definitions
+# ============================================================================
+agents:
+  - source: ~/.claude/agents/commit-assistant.md
+    target: commit-assistant.md
+  - source: ~/.claude/agents/code-reviewer.md
+    target: code-reviewer.md
+  - source: ~/.claude/agents/research-doc-grounder.md
+    target: research-doc-grounder.md
+  - source: ~/.claude/agents/task-reviewer.md
+    target: task-reviewer.md
+
+# ============================================================================
+# HOOKS - Hook scripts for Claude Code
+# ============================================================================
+hooks:
+  # Example entries:
+  # - source: ~/.claude/hooks/suggest_skills.py
+  #   target: suggest_skills.py
+  # - source: ~/.claude/hooks/log_tool_usage.py
+  #   target: log_tool_usage.py
+
+# ============================================================================
+# MEMORY - Memory files for persistent context
+# ============================================================================
+memory:
+  # Example entries:
+  # - source: ~/.claude/memory/MEMORY.md
+  #   target: MEMORY.md
+  # - source: ~/.claude/memory/patterns.md
+  #   target: patterns.md
+
+# ============================================================================
+# SKILLS - Skill definitions and related files
+# ============================================================================
+skills:
+  # Link entire skill directories or individual SKILL.md files:
+  # - source: ~/.claude/skills/systematic-debugging/SKILL.md
+  #   target: systematic-debugging/SKILL.md
+  # - source: ~/.claude/skills/when-stuck/SKILL.md
+  #   target: when-stuck/SKILL.md
+
+# ============================================================================
+# SCRIPTS - Utility scripts
+# ============================================================================
+scripts:
+  # Example entries:
+  # - source: ~/.claude/hooks/generate-skill-catalog.sh
+  #   target: generate-skill-catalog.sh
+
+# ============================================================================
+# KNOWLEDGE - Knowledge base files, reference materials
+# ============================================================================
+knowledge:
+  # Example entries:
+  # - source: ~/repos/some-project/docs/architecture.md
+  #   target: project-architecture.md
+
+# ============================================================================
+# PAPERS - Research papers, academic references
+# ============================================================================
+papers:
+  # Example entries:
+  # - source: ~/Documents/papers/llm-reasoning.pdf
+  #   target: llm-reasoning.pdf

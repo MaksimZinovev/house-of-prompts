@@ -27,3 +27,5 @@ pnpm-debug.log*
 # Claude
 .claude
 .cursor
+
+.specstory

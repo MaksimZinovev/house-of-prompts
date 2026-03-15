@@ -192,6 +192,59 @@ Deploy as a static site for best SEO performance:
 pnpm run build
 ```
 
+## Config Sync
+
+This repository includes a manifest-driven sync system for backing up Claude Code configuration files (agents, hooks, skills, etc.) from your machine into this repo for git tracking.
+
+### Quick Start
+
+```bash
+# Check what's configured to sync
+pnpm sync:status
+
+# Preview changes without copying
+pnpm sync:dry
+
+# Sync files from sources to repo
+pnpm sync:pull
+```
+
+### How It Works
+
+1. **Manifest File**: `sync-manifest.yaml` defines which files to sync
+2. **Source Directories**: Files are copied to `sources/{category}/` directories
+3. **Secret Stripping**: API keys and tokens are automatically redacted
+
+### Adding New Files to Sync
+
+Edit `sync-manifest.yaml` and add entries under the appropriate category:
+
+```yaml
+agents:
+  - source: ~/.claude/agents/my-agent.md
+    target: my-agent.md
+
+hooks:
+  - source: ~/.claude/hooks/my-hook.py
+    target: my-hook.py
+
+skills:
+  - source: ~/.claude/skills/my-skill/SKILL.md
+    target: my-skill/SKILL.md
+```
+
+### Categories
+
+| Category | Description |
+|----------|-------------|
+| `agents` | Custom agent definitions |
+| `hooks` | Hook scripts (Python, Shell) |
+| `memory` | Persistent memory files |
+| `skills` | Skill definitions |
+| `scripts` | Utility scripts |
+| `knowledge` | Knowledge base files |
+| `papers` | Research papers, references |
+
 ## Todo
 
 + [x] Add 2 prompts

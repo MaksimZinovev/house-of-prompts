@@ -7,7 +7,10 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "sync:pull": "npx tsx scripts/sync-pull.ts",
+    "sync:dry": "npx tsx scripts/sync-pull.ts --dry",
+    "sync:status": "npx tsx scripts/sync-pull.ts --status"
   },
   "dependencies": {
     "@ascorbic/airtable-loader": "^1.0.5",
