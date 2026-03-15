@@ -1,11 +1,9 @@
 ---
-title: research-doc-grounder
-description: TODO: Add description for research-doc-grounder
+title: "research-doc-grounder"
+description: "TODO: Add description for research-doc-grounder"
 tags:
   - agents
-link: 
-image: 
-
+link: "https://github.com"
 ---
 <!-- GENERATED_BY_SYNC_GENERATE -->
 ## Description

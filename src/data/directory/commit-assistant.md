@@ -1,11 +1,9 @@
 ---
-title: commit-assistant
-description: TODO: Add description for commit-assistant
+title: "commit-assistant"
+description: "TODO: Add description for commit-assistant"
 tags:
   - agents
-link: 
-image: 
-
+link: "https://github.com"
 ---
 <!-- GENERATED_BY_SYNC_GENERATE -->
 ## Description

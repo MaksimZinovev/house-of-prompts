@@ -1,3 +1,12 @@
+---
+title: Claude Example CLAUDE.md
+description: Navigation guide for Claude Code working in a Playwright test automation project.
+tags:
+  - example
+  - claude-code
+link: "https://github.com"
+---
+
 # CLAUDE.md
 
 Navigation guide for Claude Code working in this Playwright test automation project.

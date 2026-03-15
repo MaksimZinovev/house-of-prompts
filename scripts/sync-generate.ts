@@ -95,7 +95,7 @@ function createDirectoryEntry(
     title,
     description,
     tags: [category],
-    link: '',
+    link: 'https://github.com',
     image: '',
     sourcePath,
     sourceCategory: category,
@@ -104,14 +104,20 @@ function createDirectoryEntry(
 }
 
 function generateMarkdown(entry: DirectoryEntry): string {
-  const frontmatter = `---
-title: ${entry.title}
-description: ${entry.description}
-tags:
-${entry.tags.map(tag => `  - ${tag}`).join('\n')}
-link: ${entry.link}
-image: ${entry.image}
+  // Build optional fields - only add if they have values
+  const optionalLines: string[] = [];
+  if (entry.link) optionalLines.push(`link: "${entry.link}"`);
+  if (entry.image) optionalLines.push(`image: "${entry.image}"`);
 
+  const optionalSection = optionalLines.length > 0
+    ? '\n' + optionalLines.join('\n')
+    : '';
+
+  const frontmatter = `---
+title: "${entry.title}"
+description: "${entry.description}"
+tags:
+${entry.tags.map(tag => `  - ${tag}`).join('\n')}${optionalSection}
 ---
 ${GENERATED_MARKER}
 ## Description
