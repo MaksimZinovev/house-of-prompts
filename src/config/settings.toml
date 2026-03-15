@@ -15,6 +15,7 @@ url = "https://nuxtstarters.com"
 [directoryData.source]
 name = "markdown"    # default, mock, sheets, json, notion
 links = "normal"
+linksOutbound = false  # Use local routes instead of external links
 
 [directoryData.tagPages]
 title = "{0} Prompts"
