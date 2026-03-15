@@ -207,6 +207,12 @@ pnpm sync:dry
 
 # Sync files from sources to repo
 pnpm sync:pull
+
+# Generate Astro directory entries from synced files
+pnpm sync:generate
+
+# Preview generation without writing
+pnpm sync:gen:dry
 ```
 
 ### How It Works
@@ -232,6 +238,14 @@ skills:
   - source: ~/.claude/skills/my-skill/SKILL.md
     target: my-skill/SKILL.md
 ```
+
+### Workflow
+
+1. **Pull** - `pnpm sync:pull` copies files from sources to `sources/`
+2. **Generate** - `pnpm sync:generate` creates Astro entries in `src/data/directory/`
+3. **Edit** - Update descriptions in generated files
+4. **Preview** - `pnpm dev` to see on website
+5. **Commit** - Push to GitHub
 
 ### Categories
 
