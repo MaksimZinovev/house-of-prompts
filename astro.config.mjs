@@ -9,8 +9,8 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://your-username.github.io",
-  base: "/house-of-prompts", // Replace with your repo name
+  site: "https://maksimzinovev.github.io",
+  base: "/house-of-prompts",
   integrations: [
     vue(),
     mdx(),
