@@ -26,7 +26,7 @@ pnpm-debug.log*
 sync-manifest.yaml
 scripts
 .vscode/settings.json
-
+- 
 # Claude
 .claude
 .cursor
